@@ -1,0 +1,288 @@
+/* COMMUN A TOUTES LES PAGES  */
+
+body /*CORPS*/
+{
+	 margin: 10px 0 ; 
+	 padding: 0 ;
+	 text-align: left ;
+	 font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	 /*font-weight: bold ;*/
+	 background: rgb(63, 63, 63); /* image de fond*/
+    /* background:-webkit-linear-gradient(to top,  #383838,#9c9c9c ); /*chrome 10-25, safari 5.1-6*/
+    /* background: linear-gradient(to right,#383838,#727272 );/*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+	 
+}
+
+header /*ENTETE*/
+{
+	/* entete de la page */
+	 height: 190px ; /* hauteur de l'entete */
+	 margin: 0 ;
+	 text-align: left ; /* alignement du texte */
+
+	 
+}
+
+header h1 /*TITRE H1 ENTETE*/
+{
+	 text-align: center; /* alignement tu titre de l'entete*/
+	 font-size: 45px; /* taille du titre de l'entete */
+     color :rgb(253, 214, 42);
+}
+
+.contenu{
+    color:rgb(255, 255, 255);
+    margin: 50px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.images{
+    text-align: center;
+	padding-top: 15px;
+}
+
+div h2{
+    color :rgb(253, 214, 42);
+}
+
+div article{
+    color:white;
+}
+
+
+/*MENU PRINCIPAL*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+   /* font-family: Avenir, sans-serif;*/
+	/*font-style : bold;*/
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: grey;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: yellow;
+    border-bottom: 2px solid gold;
+	background: linear-gradient(to bottom, grey , black); ;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: grey;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+    
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+
+/* SERVICES */
+
+h1{
+    text-align: center;
+    color :rgb(253, 214, 42);
+    height: 50px;
+}
+
+
+.container {  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    gap: 10px ;
+    color: white;
+  }
+  
+.one{
+    width: 75%;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.two{
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1; 
+}
+
+.two h2{
+    color: rgb(253, 214, 42)
+}
+
+.three{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.three h2{
+    color: rgb(253, 214, 42)
+}
+
+.four{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.four h2{
+    color: rgb(253, 214, 42)
+}
+
+.five{
+    width: 100%;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.five h2{
+    color: rgb(253, 214, 42)
+}
+
+.six{
+    text-align: center;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 3;   
+}
+
+.six h2{
+    color: rgb(253, 214, 42)
+}
+
+.seven{
+    text-align: left;
+    width: 200%;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.seven h2{
+    color: rgb(253, 214, 42)
+}
+
+.eight{
+    width: 75%;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.eight h2{
+    color: rgb(253, 214, 42)
+}
+
+.nine{
+    width: 100%;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.nine h2{
+    color: rgb(253, 214, 42)
+}
+
+.ten{
+    width: 200%;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.ten h2{
+    color: rgb(253, 214, 42)
+}
+
+/*LOCAUX*/
+
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  main img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 120px;
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+ 
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th{
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        color:  yellow;
+        background-color:  rgb(63, 63, 63);;
+    }
+
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+      color:  white;
+    }
